@@ -1,0 +1,31 @@
+.select-container {
+    position: relative;
+    padding-top: 4px;
+    margin-top: 12px;
+}
+
+select {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: .009375em;
+    text-decoration: inherit;
+    text-transform: inherit;
+    align-self: flex-end;
+    box-sizing: border-box;
+    width: 100%;
+    appearance:none;
+
+    display: flex;
+    padding: 12px 16px 14px;
+    border: 1px solid rgba(0,0,0,.38);
+    border-radius: 4px;
+    z-index: 1;
+}
+
+select:hover {
+    border-color: rgba(0,0,0,.87);
+}
+
+select:focus {
+    outline: none;
+}

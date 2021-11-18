@@ -1,0 +1,73 @@
+.material-toggle {
+    display: block;
+    width: 60px;
+    height: 30px;
+
+    position: absolute;
+    right: 16px;
+}
+
+.material-toggle input {
+    display: none;
+}
+
+.material-toggle .toggle-label {
+    position: relative;
+    width: 150px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.material-toggle .toggle-label .track,
+.material-toggle .toggle-label .ball {
+    position: absolute;
+    display: block;
+    transition: all 250ms cubic-bezier(.4,0,.2,1);
+}
+
+.material-toggle .toggle-label .track {
+    width: 60px;
+    height: 30px;
+    background: #FDFDFF;
+    border: 1px solid rgba(0,0,0,.38);
+    box-sizing: border-box;
+    border-radius: 50px;
+}
+
+.material-toggle .toggle-label .ball {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    top: 4px;
+    left: 8px;
+    width: 20px;
+    height: 20px;
+    background: #7F7FD5;
+    border-radius: 50px;
+}
+
+.material-toggle .toggle-label .ball .icon {
+    position: inherit;
+    background: url(../img/moon.svg) no-repeat center center;
+    width: 10px;
+    height: 10px;
+}
+
+.material-toggle input:checked ~ .toggle-label .track {
+    background-color: #7F7FD5;
+    border-color: #7F7FD5;
+}
+
+.material-toggle input:checked ~ .toggle-label .ball {
+    left: 34px;
+    background-color: #E9E9E9;
+}
+
+.material-toggle input:checked ~ .toggle-label .ball .icon{
+    width: 12px;
+    height: 12px;
+
+    background: #7F7FD5;
+    border-radius: 50px;
+}

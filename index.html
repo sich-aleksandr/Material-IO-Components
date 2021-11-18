@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/input.css">
+    <link rel="stylesheet" href="styles/select.css">
+    <link rel="stylesheet" href="styles/switch.css">
+    <link rel="stylesheet" href="styles/button.css">
+    <link rel="stylesheet" href="styles/textarea.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <form class="form" action="#">
+        <span class="form__title">Регистрация</span>
+        <span class="form__subhead">Пожалуйста заполните все поля</span>
+
+        <div class="input-container">
+            <input id="name-input" name="name" type="text" required>
+            <label class="input-label" for="name-input" >Имя</label>
+        </div>
+        <div class="input-container">
+            <input id="email-input" name="email" type="email" required>
+            <label class="input-label" for="email-input" >Email</label>
+        </div>
+        <div class="input-container">
+            <input id="password-input" name="password" type="password" required>
+            <label class="input-label" for="password-input" >Пароль</label>
+        </div>
+
+        <div class="select-container">
+            <select name="select">
+                <option value="default">Выберите ваш город</option>
+                <option value="1">Минск</option>
+                <option value="2" >Гродно</option>
+                <option value="3">Гомель</option>
+                <option value="4">Брест</option>
+                <option value="5">Могилёв</option>
+                <option value="6">Витебск</option>
+            </select>
+        </div>
+        <div class="input-container">
+            <textarea id="text-input" name="text" cols="40" rows="3" type="text" required></textarea>
+            <label class="input-label" for="text-input" >Сообщение</label>
+        </div>
+
+        <div class="material-toggle">
+            <input type="checkbox" id="toggle" name="toggle" class="switch" />
+            <label for="toggle" class="toggle-label">
+                <span class="track">
+                    <span class="ball">
+                        <span class="icon"></span>
+                    </span>
+                </span>
+            </label>
+        </div>
+
+        <div class="button-container">
+            <button type="submit" class="button">Отправить</button>
+        </div>
+    </form>
+</body>
+</html>

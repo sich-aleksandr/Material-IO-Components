@@ -1,0 +1,27 @@
+.button-container {
+    height: 36px;
+
+    margin-top: 12px;
+}
+
+.button {
+    font-family: Roboto, sans-serif;
+    font-size: .875rem;
+    line-height: 2.25rem;
+    font-weight: 500;
+    color: #fff;
+
+    padding: 0 8px 0 8px;
+    display: inline-flex;
+    box-sizing: border-box;
+    min-width: 64px;
+    border: none;
+    outline: none;
+
+    cursor: pointer;
+
+    border-radius: 4px;
+
+    background-color: #7F7FD5;
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+}
